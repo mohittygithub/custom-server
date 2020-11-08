@@ -33,6 +33,7 @@ public class AdminController {
 		return queryService.getUserByUserId(principal.getName());
 	}
 		
+	/* Post Mappings */
 	
 	@PostMapping("/create/admin")
 	public User createUser(@RequestBody User request) throws JsonParseException, JsonMappingException, IOException {
